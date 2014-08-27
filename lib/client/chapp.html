@@ -1,0 +1,18 @@
+<template name="chapp_form">
+    <div id="chapp_wrapper">
+        <div id="chapp_text">
+            {{#each chapp}}
+                {{>chapp_item}}
+            {{/each}}
+        </div>
+
+        <form id="chapp-form">
+            <div id="chapp-input-div"><input id="chapp-input" type="text" placeholder="Enter your message here" /></div>
+            <button id="chapp-button" type="submit">Send</button>
+        </form>
+    </div>
+</template>
+
+<template name="chapp_item">
+    <p>{{formatDate chatDate}} | {{chatUserName}}: {{chatText}}</p>
+</template>
