@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A very basic chat package with minimum config necessary to get running",
-  version: "0.1.4",
+  version: "0.1.6",
   git: "https://github.com/afruth/chapp"
 });
 
@@ -17,9 +17,6 @@ Package.onUse(function(api) {
   api.addFiles('./lib/server/afruth:chapp-server.js','server');
   api.addFiles('./lib/client/afruth:chapp-client.js','client');
   api.addFiles('./lib/client/afruth:chapp.css','client');
-
-
-
 });
 
 Package.onTest(function(api) {

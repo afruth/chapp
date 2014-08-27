@@ -9,4 +9,25 @@ The variables are reactive, you can change them at any time.
 
 Then, in your template all the chat template: `{{>chapp_form}}`
 
+These are the chat templates, you can style the look and feel in your css:
+
+    <template name="chapp_form">
+        <div id="chapp_wrapper">
+            <div id="chapp_text">
+                {{#each chapp}}
+                    {{>chapp_item}}
+                {{/each}}
+            </div>
+    
+            <form id="chapp-form">
+                <div id="chapp-input-div"><input id="chapp-input" type="text" placeholder="Enter your message here" /></div>
+                <button id="chapp-button" type="submit">Send</button>
+            </form>
+        </div>
+    </template>
+    
+    <template name="chapp_item">
+        <p>{{formatDate chatDate}} | {{chatUserName}}: {{chatText}}</p>
+    </template>
+
 This is far from ready, but usable. I've published it to familiarize myself with the new package system. It's tested in a real Meteor app, but doesn't have yet test suites.
