@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A very basic chat package with minimum config necessary to get running",
-  version: "0.1.3",
+  version: "0.1.4",
   git: "https://github.com/afruth/chapp"
 });
 
@@ -9,7 +9,7 @@ Package.onUse(function(api) {
       'session',
       'templating',
       'ui',
-      'mrt:moment@1.7.0'
+      'mrt:moment@2.8.1'
   ])
   api.versionsFrom('METEOR@0.9.0');
   api.addFiles('./lib/client/chapp.html','client');
