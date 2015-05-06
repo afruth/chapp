@@ -1,6 +1,7 @@
 Package.describe({
-  summary: "A very basic chat package with minimum config necessary to get running",
-  version: "0.1.6",
+  summary: "Fork of afruth:chapp - A very basic chat package with minimum config necessary to get running - Adds more stylability to chat messages, and allows for cusomizable history logs",
+  version: "0.1.7",
+  name: "afruth:chapp",
   git: "https://github.com/afruth/chapp"
 });
 

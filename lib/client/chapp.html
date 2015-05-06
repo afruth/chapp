@@ -1,4 +1,4 @@
-<template name="chapp_form">
+<template name="chapp_form" xmlns="http://www.w3.org/1999/html">
     <div id="chapp_wrapper">
         <div id="chapp_text">
             {{#each chapp}}
@@ -14,5 +14,9 @@
 </template>
 
 <template name="chapp_item">
-    <p>{{formatDate chatDate}} | {{chatUserName}}: {{chatText}}</p>
+    <p>
+        <span class="chapp-chat-date">{{formatDate chatDate}}</span> |
+        <span class="chapp-username">{{chatUserName}}:</span>
+        <span class="chapp-message">{{chatText}}</span>
+    </p>
 </template>
